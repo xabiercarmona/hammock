@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+dependencies {
+
+    implementation 'commons-io:commons-io:2.11.0'
+    //needed to compile, but optional for consumers of java-cloudant
+    implementation('com.squareup.okhttp3:okhttp-urlconnection:3.13.1') {
+        ext.optional = true
+    }
+
+}
